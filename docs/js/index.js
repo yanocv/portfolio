@@ -1,6 +1,14 @@
 // Main function
 async function main() {
-	console.log("Hello world!!!");
+	gotoPage("intro");
+}
+
+async function gotoPage(page) {
+	await $.ajax({
+		url: `html/${page}.html`
+	}).done(function (data) {
+		$("body").html(data);
+	});
 }
 
 // Call main function
