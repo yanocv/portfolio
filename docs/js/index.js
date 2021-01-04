@@ -7,7 +7,7 @@ async function gotoPage(page) {
 	await $.ajax({
 		url: `html/${page}.html`
 	}).done(function (data) {
-		$("body").html(data);
+		$("main").html(data);
 	});
 }
 
