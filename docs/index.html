@@ -31,10 +31,10 @@
 		<div class="container-fluid d-flex flex-column h-100">
 			<!-- Header -->
 			<div class="row">
-				<div class="col">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="col px-0">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 						<a class="navbar-brand" href="#intro"
-							><img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo" />Yano's
+							><img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="logo" />Yano's
 							portfolio</a
 						>
 						<button
@@ -49,11 +49,10 @@
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav">
+							<ul class="navbar-nav mr-auto">
 								<li class="nav-item">
 									<a class="nav-link" href="#intro">Intro</a>
 								</li>
-
 								<li class="nav-item">
 									<a class="nav-link" href="#dev">Development</a>
 								</li>
@@ -64,6 +63,23 @@
 									<a class="nav-link" href="#code">My code</a>
 								</li>
 							</ul>
+							<div class="dropdown show my-2 my-lg-0">
+								<a
+									class="btn btn-primary dropdown-toggle"
+									href="#"
+									role="button"
+									id="dropdownLanguage"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Language
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+									<a class="dropdown-item"><img src="img/us.svg" alt="US" width="20px" class="mr-2 border" />English</a>
+									<a class="dropdown-item"><img src="img/jp.svg" alt="JP" width="20px" class="mr-2 border" />日本語</a>
+								</div>
+							</div>
 						</div>
 					</nav>
 				</div>
@@ -71,7 +87,7 @@
 
 			<!-- Content -->
 			<div class="row justify-content-center flex-grow-1">
-				<div class="col col-md-9">
+				<div class="col">
 					<main></main>
 				</div>
 			</div>
@@ -79,8 +95,19 @@
 			<!-- Footer -->
 			<div class="row">
 				<div class="col">
-					<a href="#" class="fa fa-twitter"></a>
-					<a href="#" class="fa fa-linkedin"></a>
+					<div class="container d-flex">
+						<div class="row justify-content-left">
+							<div class="col text-muted">
+								<a href="https://twitter.com/hayatoyano1990" class="fa fa-twitter text-primary"></a>
+							</div>
+							<div class="col text-muted">
+								<a href="https://github.com/yanocv" class="fa fa-github text-primary"></a>
+							</div>
+							<div class="col">
+								<a href="https://www.linkedin.com/in/yanocv" class="fa fa-linkedin text-primary"></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
