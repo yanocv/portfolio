@@ -12,7 +12,7 @@ async function gotoPage(page) {
 function initNavigation() {
 	let hash = new URL(window.location).hash.substring(1);
 	if (hash.length > 0) {
-		gotoPage(hash);
+		loadPage(hash);
 	} else {
 		gotoPage("intro");
 	}
@@ -29,10 +29,11 @@ async function loadPage(page) {
 		})
 			.done(data => {
 				$("main").html(data);
+				resolve();
 			})
 			.fail(() => {
 				if (page === notFound) {
-					console.err("Could not display 404");
+					reject();
 				} else {
 					gotoPage(notFound)
 						.then(() => resolve())
