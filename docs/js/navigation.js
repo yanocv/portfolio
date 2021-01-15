@@ -37,7 +37,7 @@ function initNavigation() {
 async function loadPage(page) {
 	return new Promise((resolve, reject) => {
 		$.ajax({
-			url: `html/${page}.html`
+			url: `html/page/${page}.html`
 		})
 			.done(data => {
 				$("main").html(data);
