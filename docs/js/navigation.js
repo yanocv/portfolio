@@ -9,7 +9,7 @@ async function gotoPage(page) {
 }
 
 // Initialize navigation
-function initNavigation() {
+async function initNavigation() {
 	let url = new URL(window.location);
 	// Initial index redirection; Both GHP and LiveServer redirect to slash, so it is always there
 	let isLocalhost = url.hostname === "localhost" || url.hostname === "127.0.0.1";
@@ -23,9 +23,9 @@ function initNavigation() {
 	// Working with hash
 	let hash = url.hash.substring(1);
 	if (hash.length > 0) {
-		loadPage(hash);
+		await loadPage(hash);
 	} else {
-		gotoPage("intro");
+		await gotoPage("intro");
 	}
 	$(window).on("hashchange", () => {
 		// New URL to get a fresh hash each time

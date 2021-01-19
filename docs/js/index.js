@@ -1,13 +1,20 @@
+let apiData = {};
+
 // Main function
 async function main() {
 	// Initial storage
 	initStorage();
 
-	// Initial layout
-	initLayout();
+	// Init layout, data, and navigation
+	try {
+		await Promise.all([initLayout(), initData(), initNavigation()]);
+	} catch {
+		failedInitReport();
+		return;
+	}
 
-	// Initial navigation, external file
-	initNavigation();
+	// Load language
+	changeLang("en");
 }
 
 // Initialize storage
@@ -16,22 +23,46 @@ function initStorage() {
 }
 
 // Layout initialization
-function initLayout() {
-	function loadLayout(element) {
-		$.ajax({
-			url: `html/layout/${element}.html`
-		})
-			.done(data => $(element).html(data))
-			.fail(layoutFail);
+async function initLayout() {
+	async function loadLayout(element) {
+		return new Promise((resolve, reject) => {
+			$.ajax({
+				url: `html/layout/${element}.html`
+			})
+				.done(data => {
+					$(element).html(data);
+					resolve();
+				})
+				.fail(reject);
+		});
 	}
 
-	loadLayout("header");
-	loadLayout("footer");
+	await loadLayout("header");
+	await loadLayout("footer");
 }
 
-// A meesage when layout fails
-function layoutFail() {
+// A message when layout fails
+function failedInitReport() {
 	alert("Please, check your internet connection.");
+}
+
+// Init language
+async function initData() {
+	return new Promise((resolve, reject) => {
+		$.ajax({
+			url: "api/data.json"
+		})
+			.done(data => {
+				apiData = data;
+				resolve();
+			})
+			.fail(reject);
+	});
+}
+
+// Change language
+function changeLang(lang) {
+	$(".api-data-brand").text(apiData.brand[lang]);
 }
 
 // Call main function
