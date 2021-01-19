@@ -62,7 +62,7 @@ async function initData() {
 
 // Change language
 function changeLang(lang) {
-	for (let key in data) {
+	for (let key in apiData) {
 		$(`.api-data-${key}`).html(apiData[key][lang]);
 	}
 }
