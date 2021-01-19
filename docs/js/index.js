@@ -62,7 +62,9 @@ async function initData() {
 
 // Change language
 function changeLang(lang) {
-	$(".api-data-brand").text(apiData.brand[lang]);
+	for (let key in data) {
+		$(`.api-data-${key}`).html(apiData[key][lang]);
+	}
 }
 
 // Call main function
