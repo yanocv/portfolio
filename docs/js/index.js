@@ -9,13 +9,13 @@ async function main() {
 	// Init layout, data, and navigation
 	try {
 		await Promise.all([initLayout(), initData(), initNavigation()]);
+
+		// Load language
+		loadMainLang();
 	} catch {
 		failedInitReport();
 		return;
 	}
-
-	// Load language
-	loadMainLang();
 }
 
 // Initialize storage
