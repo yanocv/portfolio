@@ -1,4 +1,5 @@
 let apiData = {};
+let siteLang = "en";
 
 // Main function
 async function main() {
@@ -14,12 +15,15 @@ async function main() {
 	}
 
 	// Load language
-	changeLang("en");
+	loadMainLang();
 }
 
 // Initialize storage
 function initStorage() {
-	// https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+	let lang = localStorage.getItem("siteLang");
+	if (lang !== null) {
+		siteLang = lang;
+	}
 }
 
 // Layout initialization
@@ -46,8 +50,14 @@ function failedInitReport() {
 	alert("Please, check your internet connection.");
 }
 
-// Init language
+// Init language and data
 async function initData() {
+	// Init language bits
+	$(window).on("loadpagecomplete", () => {
+		loadMainLang();
+	});
+
+	// Load the data
 	return new Promise((resolve, reject) => {
 		$.ajax({
 			url: "api/data.json"
@@ -62,8 +72,18 @@ async function initData() {
 
 // Change language
 function changeLang(lang) {
-	for (let key in apiData) {
-		$(`.api-data-${key}`).html(apiData[key][lang]);
+	localStorage.setItem("siteLang", lang);
+	siteLang = lang;
+	for (let key in apiData.layout) {
+		$(`.api-data-${key}`).html(apiData.layout[key][lang]);
+	}
+	loadMainLang();
+}
+
+// Loads content
+function loadMainLang() {
+	for (let key in apiData.main) {
+		$(`.api-data-${key}`).html(apiData.main[key][siteLang]);
 	}
 }
 

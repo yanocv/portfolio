@@ -27,9 +27,12 @@ async function initNavigation() {
 	} else {
 		await gotoPage("intro");
 	}
-	$(window).on("hashchange", () => {
+	$(window).on("hashchange", async () => {
 		// New URL to get a fresh hash each time
-		loadPage(new URL(window.location).hash.substring(1));
+		await loadPage(new URL(window.location).hash.substring(1));
+
+		// Signal end of load
+		$(window).trigger("loadpagecomplete");
 	});
 }
 

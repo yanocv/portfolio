@@ -1,14 +1,34 @@
 {
-	"brand": {
-		"en": "Yano's world",
-		"jp": "僕の世界"
+	"layout": {
+		"brand": {
+			"en": "Yano's world",
+			"jp": "僕の世界"
+		}
 	},
-	"about-title": {
-		"en": "About me",
-		"jp": "自己紹介"
-	},
-	"about-text": {
-		"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more oportunities to work as a developer.",
-		"jp": "矢野初めまして矢野ともします。東京に住んで働いています。2年前にプログラマーとして旅を始め、主にTypeScriptでコーディングしていますが、JavaScript、HTML、CSSでもコーディングしています。私の自由時間には、いくつかのオープンソースプロジェクトに取り組んでいます。このウェブサイトは、いくつかのこの2年間で学んだこと。<br />私はコーディングが好きで、開発者として働く機会をもっと探しています。"
+	"main": {
+		"about-title": {
+			"en": "About me",
+			"jp": "自己紹介"
+		},
+		"about-text": {
+			"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more oportunities to work as a developer.",
+			"jp": "矢野初めまして矢野ともします。東京に住んで働いています。2年前にプログラマーとして旅を始め、主にTypeScriptでコーディングしていますが、JavaScript、HTML、CSSでもコーディングしています。私の自由時間には、いくつかのオープンソースプロジェクトに取り組んでいます。このウェブサイトは、いくつかのこの2年間で学んだこと。<br />私はコーディングが好きで、開発者として働く機会をもっと探しています。"
+		},
+		"dev-title": {
+			"en": "Development",
+			"jp": "開発"
+		},
+		"dev-programming-lang": {
+			"en": "Languages",
+			"jp": "言語"
+		},
+		"dev-tools": {
+			"en": "Tools",
+			"jp": "ツール"
+		},
+		"project-title": {
+			"en": "Projects",
+			"jp": "プロジェクト"
+		}
 	}
 }
