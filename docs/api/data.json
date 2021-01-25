@@ -14,6 +14,30 @@
 			"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more oportunities to work as a developer.",
 			"jp": "矢野初めまして矢野ともします。東京に住んで働いています。2年前にプログラマーとして旅を始め、主にTypeScriptでコーディングしていますが、JavaScript、HTML、CSSでもコーディングしています。私の自由時間には、いくつかのオープンソースプロジェクトに取り組んでいます。このウェブサイトは、いくつかのこの2年間で学んだこと。<br />私はコーディングが好きで、開発者として働く機会をもっと探しています。"
 		},
+		"card1-title": {
+			"en": "Coding",
+			"jp": "コーディング"
+		},
+		"card1-text": {
+			"en": "I like to code things from scratch, and enjoy bringing ideas to life in the browser. I value simple content structure, clean design patterns, and thoughtful interactions.",
+			"jp": "はははっははははっは"
+		},
+		"card2-title": {
+			"en": "Skills",
+			"jp": "スキル"
+		},
+		"card2-text": {
+			"en": "Experience in multi-cultural environments, thirst to meet the unknown, and learn from brilliant minds.",
+			"jp": "はははっははははっは"
+		},
+		"card3-title": {
+			"en": "Languages",
+			"jp": "言語"
+		},
+		"card3-text": {
+			"en": "From Portuguese, English, Japanese, and Spanish, to JavaScript, TypeScript, and HTML.",
+			"jp": "はははっははははっは"
+		},
 		"dev-title": {
 			"en": "Development",
 			"jp": "開発"

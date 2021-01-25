@@ -2,3 +2,68 @@ html,
 body {
 	height: 100%;
 }
+
+/* Intro page styles*/
+
+.header-intro {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.computer-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.text {
+	background-color: #7c1ff3;
+	color: white;
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-bottom: 5%;
+	display: block;
+	justify-content: center;
+}
+
+.api-data-about-title {
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+.api-data-about-text {
+	line-height: 2;
+}
+
+.card-group {
+	padding: 1rem;
+	transform: translateY(-15%);
+}
+
+@media only screen and (max-width: 600px) {
+	card-group {
+		display: flex;
+		max-width: 950px;
+		margin: auto;
+		transform: translateY(-20%);
+	}
+}
+
+.card {
+	border: 2px solid #eee;
+	padding: 1rem;
+	background: #fff;
+}
+
+.card-body {
+	color: black;
+	text-align: center;
+}
+
+/* Dev page styles*/
+/* Dev projects styles*/
