@@ -46,24 +46,38 @@ body {
 	transform: translateY(-20%);
 }
 
-@media only screen and (max-width: 600px) {
-	card-group {
+@media only screen and (max-width: 900px) {
+	.card-group {
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 950px;
 		margin: auto;
+		padding: 0px;
 	}
-}
-@media only screen and (max-width: 600px) {
 	.text {
-		margin-bottom: 7rem;
+		background-color: #7c1ff3;
+		color: white;
+		text-align: center;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-bottom: 100px;
+		display: block;
+		justify-content: center;
+	}
+
+	.intro-main-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 
 .card {
 	border: 2px solid #eee;
 	padding: 1rem;
-	background: #fff;
 }
 .card h5 {
 	color: #7c1ff3;
@@ -85,6 +99,9 @@ body {
 }
 /* Dev page styles*/
 
+.dev-container {
+}
+
 .api-data-dev-title {
 	text-align: center;
 	padding-top: 2%;
@@ -101,6 +118,10 @@ body {
 	padding-bottom: 4%;
 }
 
+.progress-bar {
+	background-color: #7c1ff3;
+}
+
 .card-dev {
 	padding: 2rem;
 }
@@ -115,10 +136,21 @@ body {
 }
 
 .card-dev-img {
-	width: 18%;
+	width: 25%;
 	text-align: left;
 	float: left;
 	padding-right: 1rem;
 }
 
+.card-dev-img-mac {
+	width: 45%;
+	text-align: left;
+	float: left;
+	padding-right: 5rem;
+}
+
+.dev-lang {
+	text-align: left;
+	padding-bottom: 4rem;
+}
 /* Dev projects styles*/
