@@ -43,33 +43,24 @@ body {
 .card-group {
 	padding-left: 4rem;
 	padding-right: 4rem;
-	transform: translateY(-20%);
+	transform: translateY(-15%);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	.card-group {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 950px;
 		margin: auto;
 		padding: 0px;
+		display: inline;
 	}
 	.text {
-		background-color: #7c1ff3;
-		color: white;
-		text-align: center;
 		padding-left: 1%;
 		padding-right: 1%;
-		padding-bottom: 100px;
-		display: block;
-		justify-content: center;
 	}
 
 	.intro-main-img {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 90%;
+		width: 70%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -90,17 +81,11 @@ body {
 }
 
 .card-img {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 35%;
-	padding-left: 10%;
-	padding-right: 10%;
+	width: 15%;
 }
 /* Dev page styles*/
-
-.dev-container {
-}
 
 .api-data-dev-title {
 	text-align: center;
