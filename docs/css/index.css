@@ -2,3 +2,170 @@ html,
 body {
 	height: 100%;
 }
+
+/* Intro page styles*/
+
+.header-intro {
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.intro-main-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.text {
+	background-color: #7c1ff3;
+	color: white;
+	text-align: center;
+	padding-left: 23rem;
+	padding-right: 23rem;
+	padding-bottom: 5rem;
+	display: block;
+	justify-content: center;
+}
+
+.api-data-about-title {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.api-data-about-text {
+	line-height: 2rem;
+}
+
+.card-group {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	transform: translateY(-15%);
+}
+
+@media only screen and (max-width: 1000px) {
+	.card-group {
+		margin: auto;
+		padding: 0px;
+		display: inline;
+	}
+	.text {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.intro-main-img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+.card {
+	border: 2px solid #eee;
+	padding: 1rem;
+}
+.card h5 {
+	color: #7c1ff3;
+	padding-bottom: 1rem;
+}
+
+.card-body {
+	color: black;
+	text-align: center;
+}
+
+.card-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+/* Dev page styles*/
+
+.api-data-dev-title {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.progress-bar {
+	background-color: #7c1ff3;
+}
+
+.card-dev {
+	padding: 2rem;
+}
+
+.card-dev h3 {
+	color: #7c1ff3;
+	padding-bottom: 2rem;
+}
+
+.card-dev-body {
+	text-align: center;
+}
+
+.card-dev-img {
+	width: 20%;
+	text-align: left;
+	float: left;
+	padding-right: 1rem;
+}
+
+.node-img {
+	width: 25%;
+	text-align: left;
+	float: left;
+	padding-right: 1rem;
+}
+
+.dev-lang {
+	text-align: left;
+	padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	.card-dev-img {
+		width: 26%;
+	}
+	.node-img {
+		width: 30%;
+	}
+	.card-dev {
+		padding: 0rem;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.card-dev-img {
+		width: 15%;
+	}
+	.node-img {
+		width: 27%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.card-dev-img {
+		width: 22%;
+	}
+	.node-img {
+		width: 30%;
+		padding-right: 0rem;
+	}
+}
+/* Dev projects styles*/
+
+.api-data-project-title {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.api-data-project-text {
+	line-height: 2rem;
+}

@@ -1,0 +1,90 @@
+{
+	"layout": {
+		"brand": {
+			"en": "Yano's world",
+			"jp": "僕の世界"
+		}
+	},
+	"main": {
+		"about-title": {
+			"en": "About me",
+			"jp": "自己紹介"
+		},
+		"about-text": {
+			"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more oportunities to work as a developer.",
+			"jp": "初めまして。矢野と申します。<br/> 私は２年前にプログラミングを始め、現在では TypeScript、JavaScript、HTML、CSS を扱うことがかのうです。<br/>また、いくつかのオープンソースプロジェクトにたずさわり、このウェブサイトその一環で制作しました。げんざいはコーディングスキルを活かしてデベロッパーとして活躍できる仕事を探しております"
+		},
+		"card1-title": {
+			"en": "Coding",
+			"jp": "コーディング"
+		},
+		"card1-text": {
+			"en": "I like to code things from scratch, and enjoy bringing ideas to life in the browser. I value simple content structure, clean design patterns, and thoughtful interactions.",
+			"jp": "私はゼロからコーディングする事を得意とし、アイディアベースからシンプルで洗練デザインのブラウザを立ち上げます。"
+		},
+		"card2-title": {
+			"en": "Skills",
+			"jp": "スキル"
+		},
+		"card2-text": {
+			"en": "Experienced in multicultural environments, team-oriented, analytical thinking, multi-tasking, adaptability,  and multilingual comunicator. Recently became MTA certified in JavaScript, HTML, and CSS, but still eager to learn new frameworks",
+			"jp": "はははっははははっは"
+		},
+		"card3-title": {
+			"en": "Languages",
+			"jp": "言語"
+		},
+		"card3-text": {
+			"en": "From Portuguese, English, Japanese, and Spanish, to JavaScript, TypeScript, and HTML.",
+			"jp": "ポルトガル語、英語、日本語、スペイン語 から　JavaScript、TypeScript、HTML など様々な言語"
+		},
+		"dev-title": {
+			"en": "Development",
+			"jp": "開発"
+		},
+		"dev-programming-lang": {
+			"en": "Languages",
+			"jp": "言語"
+		},
+		"dev-tools": {
+			"en": "Tools",
+			"jp": "ツール"
+		},
+		"dev-systems": {
+			"en": "Computer systems",
+			"jp": "コンピュータシステム"
+		},
+		"project-title": {
+			"en": "Projects",
+			"jp": "プロジェクト"
+		},
+		"project-text": {
+			"en": "My specialties include quickly learning new skills and programming languages, problem solving, responsive design principles and methods of organizing code. My ability to learn new concepts quickly and efficiently, along with my hands on style of learning, led me to challenge myself and work on these projects.",
+			"jp": "私の特技は、新しいスキルの迅速な習得、問題解決、レスポンシブル・デザイン、コード管理です。<br />私の迅速かつ効率的に新しいコンセプトを学ぶ能力と、ラーニング・スタイルをもって挑戦を続け、以下のプロジェクト制作しました。"
+		},
+		"card1-project-text": {
+			"en": "A JavaScript package, behaving exactly as Linux cat command, supporting all the options such as line numbering. Written in TypeScript natively. The package is available at the NPM link below.",
+			"jp": "Linux catのコマンドと同様の動作をし、Line numberingなどの全てのオプションに対応するJavaScript パッケージです。TypeScriptでネイティブに書かれています。このパッケージは以下のNPMリンクにて入手可能です。GithubおよびNPMのリンクはこちら"
+		},
+		"card2-project-text": {
+			"en": "A cross-platform implementations of the Linux echo command. Written in TypeScript natively. Not ready for deployment yet, but source code can be seen at the GitHub link below.",
+			"jp": "クロスプラットフォームに実装可能なLinux echo コマンドです。typescriptでネイティブに書かれています。こちらはまだデプロイ不可ですが、以下GitHubリンクよりソースコードをご覧頂けます。"
+		},
+		"card3-project-text": {
+			"en": "A multiplayer WebGL HTML5 dungeon game. Still in development. <br /> Coming soon.",
+			"jp": "マルチプレイヤーのWebGL、HTML5 ダンジェオン　ゲームです。＊開発中"
+		},
+		"mycode-title": {
+			"en": "My code",
+			"jp": "マイコード"
+		},
+		"mycode-issues": {
+			"en": "Issues",
+			"jp": "問題"
+		},
+		"mycode-text": {
+			"en": "A simple application mimicking the GitHub issues page.",
+			"jp": "GitHubの問題ページを模倣したシンプルなアプリケーション。"
+		}
+	}
+}

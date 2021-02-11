@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+ <path transform="matrix(.04596 0 0 .04663 -1.5607 -8.2499)" d="m886.77 607.54a416.03 410.28 0 1 1 -832.07 0 416.03 410.28 0 1 1 832.07 0z" fill="none" stroke="#7c1ff3" stroke-width="35.099"/>
+ <path transform="matrix(.02908 0 0 .04663 6.2382 -8.2499)" d="m886.77 607.54a416.03 410.28 0 1 1 -832.07 0 416.03 410.28 0 1 1 832.07 0z" fill="none" stroke="#7c1ff3" stroke-width="44.125"/>
+ <path transform="matrix(.05124 0 0 .05269 .97017 -7.7566)" d="m371.41 162.71-5.7583 728.42" fill="none" stroke="#7c1ff3" stroke-width="31.274"/>
+ <path transform="matrix(.05124 0 0 .05269 .97017 -7.7566)" d="m-3.1808 525.95 744.3-3.1808" fill="none" stroke="#7c1ff3" stroke-width="31.274"/>
+ <path transform="matrix(.05124 0 0 .05269 .97017 -7.7566)" d="m50.448 343.05 638.63-3.1808" fill="none" stroke="#7c1ff3" stroke-width="31.274"/>
+ <path transform="matrix(.05124 0 0 .05269 .97017 -7.7566)" d="m53.629 719.97 638.63-3.1808" fill="none" stroke="#7c1ff3" stroke-width="31.274"/>
+</svg>

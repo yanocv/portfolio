@@ -1,51 +1,90 @@
-const notFound = "not_found";
+let apiData = {};
+let siteLang = "en";
 
 // Main function
 async function main() {
-	// Initial navigation
-	initNavigation();
-}
+	// Initial storage
+	initStorage();
 
-// Full redirection
-async function gotoPage(page) {
-	let url = new URL(window.location);
-	url.hash = page;
-	window.history.pushState({}, "", url);
-	await loadPage(page);
-}
+	// Init layout, data, and navigation
+	try {
+		await Promise.all([initLayout(), initData(), initNavigation()]);
 
-// Initialize navigation
-function initNavigation() {
-	let hash = new URL(window.location).hash.substring(1);
-	if (hash.length > 0) {
-		gotoPage(hash);
-	} else {
-		gotoPage("intro");
+		// Load language
+		loadMainLang();
+	} catch {
+		failedInitReport();
+		return;
 	}
-	$(window).on("hashchange", e => {
-		loadPage(new URL(window.location).hash.substring(1));
-	});
 }
 
-// Navigation
-async function loadPage(page) {
+// Initialize storage
+function initStorage() {
+	let lang = localStorage.getItem("siteLang");
+	if (lang !== null) {
+		siteLang = lang;
+	}
+}
+
+// Layout initialization
+async function initLayout() {
+	async function loadLayout(element) {
+		return new Promise((resolve, reject) => {
+			$.ajax({
+				url: `html/layout/${element}.html`
+			})
+				.done(data => {
+					$(element).html(data);
+					resolve();
+				})
+				.fail(reject);
+		});
+	}
+
+	await loadLayout("header");
+	await loadLayout("footer");
+}
+
+// A message when layout fails
+function failedInitReport() {
+	alert("Please, check your internet connection.");
+}
+
+// Init language and data
+async function initData() {
+	// Init language bits
+	$(window).on("loadpagecomplete", () => {
+		loadMainLang();
+	});
+
+	// Load the data
 	return new Promise((resolve, reject) => {
 		$.ajax({
-			url: `html/${page}.html`
+			url: "api/data.json"
 		})
 			.done(data => {
-				$("main").html(data);
+				apiData = data;
+				resolve();
 			})
-			.fail(() => {
-				if (page === notFound) {
-					console.err("Could not display 404");
-				} else {
-					gotoPage(notFound)
-						.then(() => resolve())
-						.catch(() => reject());
-				}
-			});
+			.fail(reject);
 	});
+}
+
+// Change language
+function changeLang(lang) {
+	localStorage.setItem("siteLang", lang);
+	siteLang = lang;
+	for (let key in apiData.layout) {
+		$(`.api-data-${key}`).html(apiData.layout[key][lang]);
+	}
+	loadMainLang();
+}
+
+// Loads content
+function loadMainLang() {
+	for (let key in apiData.main) {
+		$(`.api-data-${key}`).html(apiData.main[key][siteLang]);
+	}
 }
 
 // Call main function
