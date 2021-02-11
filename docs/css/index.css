@@ -160,3 +160,12 @@ body {
 	}
 }
 /* Dev projects styles*/
+
+.api-data-project-title {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.api-data-project-text {
+	line-height: 2rem;
+}
