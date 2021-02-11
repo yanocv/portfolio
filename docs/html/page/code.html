@@ -1,3 +1,50 @@
-<div class="container">
-	<h1>My code</h1>
+<div class="text">
+	<h2 class="api-data-mycode-title"><!-- Header --></h2>
+	<p class="api-data-mycode-text"><!-- Text --></p>
 </div>
+<div class="container">
+	<h1>Issues</h1>
+	<div class="jumbotron">
+		<h3>Add new Issue:</h3>
+		<form id="issueInputForm">
+			<div class="form-group">
+				<label for="issueSeverityInput">Priority</label>
+				<select id="issueSeverityInput" class="form-control">
+					<option value="Low">Low</option>
+					<option value="Medium">Medium</option>
+					<option value="High">High</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="issueAssignedToInput">Assignees</label>
+				<input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter assignees..." />
+			</div>
+			<div class="form-group">
+				<label for="issueDescInputTitle">Issue</label>
+				<select id="issueDescInputTitle" class="form-control">
+					<option value="Bug report">Bug report</option>
+					<option value="Task">Task</option>
+					<option value="Feature request">Feature request</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="issueDescInputText">Description</label><br />
+				<textarea
+					id="issueDescInputText"
+					style="width: 100%"
+					rows="4"
+					cols="50"
+					placeholder="Describe your issue..."
+				></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Add</button>
+		</form>
+	</div>
+	<div class="col-lg-12">
+		<div id="issuesList"></div>
+	</div>
+</div>
+<div class="footer">
+	<p>&copy Yano</p>
+</div>
+<script src="/docs/js/mycode.js"></script>
