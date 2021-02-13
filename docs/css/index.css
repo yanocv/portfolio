@@ -159,7 +159,7 @@ body {
 		padding-right: 0rem;
 	}
 }
-/* Dev projects styles*/
+/* Projects page styles*/
 
 .api-data-project-title {
 	padding-top: 2rem;
@@ -168,4 +168,12 @@ body {
 
 .api-data-project-text {
 	line-height: 2rem;
+}
+
+/* Mycode page styles*/
+
+.mycode-title {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
 }

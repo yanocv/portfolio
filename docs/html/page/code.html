@@ -3,8 +3,8 @@
 	<p class="api-data-mycode-text"><!-- Text --></p>
 </div>
 <div class="container">
-	<h1>Issues</h1>
-	<div class="jumbotron">
+	<h1 class="mycode-title"></h1>
+	<div class="jumbotron mycode-container">
 		<h3>Add new Issue:</h3>
 		<form id="issueInputForm">
 			<div class="form-group">
@@ -17,7 +17,12 @@
 			</div>
 			<div class="form-group">
 				<label for="issueAssignedToInput">Assignees</label>
-				<input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter assignees..." />
+				<select id="issueAssignedToInput" class="form-control">
+					<option value="James">James</option>
+					<option value="Hetfield">Hetfield</option>
+					<option value="Dave">Dave</option>
+					<option value="Mustaine">Mustaine</option>
+				</select>
 			</div>
 			<div class="form-group">
 				<label for="issueDescInputTitle">Issue</label>
@@ -47,4 +52,4 @@
 <div class="footer">
 	<p>&copy Yano</p>
 </div>
-<script src="/docs/js/mycode.js"></script>
+<script src="/js/mycode.js"></script>

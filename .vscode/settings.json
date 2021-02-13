@@ -1,5 +1,6 @@
 {
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.insertSpaces": false,
-	"files.eol": "\n"
+	"liveServer.settings.root": "/docs",
+	"liveServer.settings.port": 5501
 }
