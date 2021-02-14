@@ -2,7 +2,7 @@
 	"layout": {
 		"brand": {
 			"en": "Yano's world",
-			"jp": "僕の世界"
+			"jp": "矢野の世界"
 		}
 	},
 	"main": {
@@ -11,8 +11,8 @@
 			"jp": "自己紹介"
 		},
 		"about-text": {
-			"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more oportunities to work as a developer.",
-			"jp": "初めまして。矢野と申します。<br/> 私は２年前にプログラミングを始め、現在では TypeScript、JavaScript、HTML、CSS を扱うことがかのうです。<br/>また、いくつかのオープンソースプロジェクトにたずさわり、このウェブサイトその一環で制作しました。げんざいはコーディングスキルを活かしてデベロッパーとして活躍できる仕事を探しております"
+			"en": "My name is Yano and I live and work in Tokyo.<br />I started my journey as a programmer 2 years ago, coding mostly in TypeScript, but also in JavaScript, HTML, and CSS. In my free-time, I work on a few open-source projects, and this website is a representation of some of the things I've learned during this 2 years.<br />I like coding and looking for more opportunities to work as a developer.",
+			"jp": "初めまして。矢野と申します。<br/> 私は２年前にプログラミングを始め、現在では TypeScript、JavaScript、HTML、CSS を扱うことが可能です。<br/>また、いくつかのオープンソースプロジェクトに携わり、このウェブサイトその一環で制作しました。現在はコーディングスキルを活かしてデベロッパーとして活躍できる仕事を探しております"
 		},
 		"card1-title": {
 			"en": "Coding",
@@ -20,15 +20,15 @@
 		},
 		"card1-text": {
 			"en": "I like to code things from scratch, and enjoy bringing ideas to life in the browser. I value simple content structure, clean design patterns, and thoughtful interactions.",
-			"jp": "私はゼロからコーディングする事を得意とし、アイディアベースからシンプルで洗練デザインのブラウザを立ち上げます。"
+			"jp": "私はゼロからコーディングする事を得意とし、アイディアベースからシンプルで洗練されたデザインのブラウザを立ち上げます。"
 		},
 		"card2-title": {
 			"en": "Skills",
 			"jp": "スキル"
 		},
 		"card2-text": {
-			"en": "Experienced in multicultural environments, team-oriented, analytical thinking, multi-tasking, adaptability,  and multilingual comunicator. Recently became MTA certified in JavaScript, HTML, and CSS, but still eager to learn new frameworks",
-			"jp": "はははっははははっは"
+			"en": "Experienced in multicultural environments, team-oriented, analytical thinking, multi-tasking, adaptability,  and multilingual communicator. Recently became MTA certified in JavaScript, HTML, and CSS, but still eager to learn new frameworks.",
+			"jp": "多文化環境、チーム志向、分析的思考、マルチタスク、および多言語コミュニケーションの経験。JavaScript、HTML、CSSでMTA認定を取得し、さらに新しいフレームワークを学習中です。"
 		},
 		"card3-title": {
 			"en": "Languages",
